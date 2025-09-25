@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: secure-login
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/securelogin}
+  thymeleaf:
+    cache: false
+  session:
+    store-type: mongodb
+
+server:
+  port: 8080
